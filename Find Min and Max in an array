@@ -1,0 +1,24 @@
+# Ques. Find Min and max in an array.
+
+Sol.
+
+def getMaxElement(a,n):
+        maximum = a[0]
+        for al in a:
+            if(al > maximum):
+                maximum = al
+        return maximum
+
+def getMinElement(a,n):
+        minimum = a[0]
+        for al in a:
+            if(al < minimum):
+                minimum = al
+        return minimum
+
+a = [5,2,4,7,1,-1,10]
+n = 4
+max = getMaxElement(a,n)
+min = getMinElement(a,n)
+print(max)
+print(min)
