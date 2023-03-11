@@ -2,14 +2,14 @@
 
 Sol.
 
-def getMaxElement(a,n):
+def getMaxElement(a):
         maximum = a[0]
         for al in a:
             if(al > maximum):
                 maximum = al
         return maximum
 
-def getMinElement(a,n):
+def getMinElement(a):
         minimum = a[0]
         for al in a:
             if(al < minimum):
@@ -17,8 +17,7 @@ def getMinElement(a,n):
         return minimum
 
 a = [5,2,4,7,1,-1,10]
-n = 4
-max = getMaxElement(a,n)
-min = getMinElement(a,n)
+max = getMaxElement(a)
+min = getMinElement(a)
 print(max)
 print(min)
