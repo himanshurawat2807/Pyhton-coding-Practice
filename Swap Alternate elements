@@ -1,0 +1,25 @@
+Ques. Swap Alternate elemts 
+i/p : [5,2,9,4,7,9]
+o/p : [2,5,4,9,9,7]
+
+def swap(x,y):
+    z = x
+    x = y
+    y = z
+    return x,y
+    
+
+def swapAlternate(a,size):
+        i = 0
+        j = 1
+        res = []
+        while j < size:
+            a[i],a[j] = swap(a[i],a[j])
+            i=i+2
+            j=j+2
+        
+        print(a)
+        
+a = [5,2,4,7,1,-1,5]
+size = len(a)
+swapAlternate(a,size)
