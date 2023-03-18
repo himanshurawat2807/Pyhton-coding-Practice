@@ -12,7 +12,6 @@ def swap(x,y):
 def swapAlternate(a,size):
         i = 0
         j = 1
-        res = []
         while j < size:
             a[i],a[j] = swap(a[i],a[j])
             i=i+2
