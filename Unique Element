@@ -1,0 +1,14 @@
+Question : An array/list of size n where n is equal to 2m+1. Now in given array m no.s are presnt twice and one number is oresent only one.
+i/p : [2,3,1,6,3,6,2]
+o/p: 1
+
+sol.
+def uniqueInList(a,size):
+    unique = 0
+    for ele in a:
+        unique = unique^ele
+    print (unique)
+        
+a = [2,3,1,6,3,6,2]
+size = len(a)
+uniqueInList(a,size)
