@@ -1,0 +1,16 @@
+# Q. Prime Or Not
+# i/p : n = 10
+# o/p : Not Prime
+
+n=21
+isPrime =0
+
+for x in range(2,n):
+  if(n%x) == 0:
+    isPrime = 1
+    break
+
+if (isPrime == 1):
+  print("Not Prime")
+else: 
+  print("Prime")
