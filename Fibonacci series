@@ -1,0 +1,15 @@
+# Q. Fibonacci series
+# i/p : n=10, where n is number of digits in fibonacci series
+# o/p [0,1,1,2,3,5,8,13,21,34]
+
+n=10
+a=0
+b=1
+print(a)
+print(b)
+
+for x in range(n-2):
+    sum = a+b
+    print(sum)
+    a=b
+    b=sum
