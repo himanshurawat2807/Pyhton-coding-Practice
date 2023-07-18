@@ -1,0 +1,18 @@
+# Q. FInd factorial ncr
+# i/p : n =5, r=3
+# o/p : 10
+
+n = 5
+r = 3
+
+
+def factorial(n):
+  result = 1
+  for x in range(n,1,-1):
+    result = result * x
+  return result
+
+numerator = factorial(n)
+denominator = factorial(r) * factorial (n-r)
+ncr = numerator//denominator
+print(ncr)
