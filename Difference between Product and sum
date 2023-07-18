@@ -1,0 +1,15 @@
+# Q. Given Integer n, return diff. between product of its digit and sum of its digits.
+# i/p : n = 234
+# o/p : 15
+
+n=234
+sum = 0
+product = 1
+
+while n != 0:
+  sum = sum + (n%10)
+  product = product * (n%10)
+  n = n//10
+
+difference = product - sum
+print(difference)
