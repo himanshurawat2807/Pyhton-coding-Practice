@@ -1,0 +1,13 @@
+# Q. Reverse Integer
+# i/p : n = 234
+# o/p : 432
+
+n=234
+reverse = 0
+
+while n != 0:
+  digit = n%10
+  reverse = (reverse * 10) + digit 
+  n = n//10
+
+print(reverse)
