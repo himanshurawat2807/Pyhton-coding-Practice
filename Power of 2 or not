@@ -1,0 +1,18 @@
+# Q. GIven integer is power of 2 or not
+# i/p : n = 32,24
+# o/p : yes,no
+
+n = 1
+temp = 0
+while (n != 1):
+
+  if n%2 ==0:
+    n = n//2
+
+  else:
+    temp = 1
+    break
+if temp == 1 or n ==1:
+  print("No ")
+else :
+  print("Yes")
