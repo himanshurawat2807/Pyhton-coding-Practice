@@ -1,0 +1,17 @@
+# Q. Find Duplicate
+# i/p : a = [1,2,3,4,4]
+# o/p : 4
+# explanation : In array of size n containing each no. between 1 and n-1 at least once. There is single 
+#               integer value that is present twice in array. find that duplicate integer value.
+
+a = [1,2,3,3,4]
+size = len(a)
+duplicate = 0
+
+for i in range(0,size,1):
+  duplicate = duplicate^a[i]
+
+for j in range(1,size,1):
+  duplicate = duplicate^j
+  
+print(duplicate)
