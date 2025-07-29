@@ -1,0 +1,17 @@
+def armstrongOrNot(n):
+    size = len(str(n))
+    arm = 0
+    temp = n
+    while temp > 0:
+        rem = temp%10
+        arm +=  rem**size
+        temp = temp//10
+        print('---------',arm)
+    if arm == n:
+        return ("Armstrong")
+    else:
+        return ("Not Armstrong")
+
+
+n = 153
+print(armstrongOrNot(n))
