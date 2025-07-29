@@ -10,7 +10,6 @@ def armstrongOrNot(n):
         rem = temp%10
         arm +=  rem**size
         temp = temp//10
-        print('---------',arm)
     if arm == n:
         return ("Armstrong")
     else:
