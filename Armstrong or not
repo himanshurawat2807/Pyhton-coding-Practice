@@ -16,6 +16,5 @@ def armstrongOrNot(n):
     else:
         return ("Not Armstrong")
 
-
 n = 153
 print(armstrongOrNot(n))
