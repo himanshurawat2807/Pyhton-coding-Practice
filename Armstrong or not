@@ -1,3 +1,7 @@
+# Q. Check if number is Armstrong or Not
+# i/p : n=153, 1**3 + 5**3 + 3**3 = 153
+# o/p : Yes
+
 def armstrongOrNot(n):
     size = len(str(n))
     arm = 0
